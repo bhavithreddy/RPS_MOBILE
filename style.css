@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+body {
+  background-color: antiquewhite;
+  font-family: Inter;
+}
+.title {
+  margin: auto;
+  width: 300px;
+  height: 100px;
+  background-color: cornflowerblue;
+  border-radius: 30px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  color: burlywood;
+}
+.choice {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(250, 152, 5);
+  border-radius: 80%;
+  /* margin-right: 20px; */
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.choice:hover {
+  cursor: pointer;
+  /* opacity: 0.5; */
+  background-color: rgb(108, 101, 164);
+}
+
+.score_board {
+  display: flex;
+  justify-content: center;
+  align-items: centers;
+  font-size: 1.5rem;
+  margin-right: 30px;
+  gap: 2rem;
+  margin-bottom: 40px;
+}
+#user,
+#Computer {
+  color: white;
+  font-weight: 800;
+}
+.message {
+  margin: auto;
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.score {
+  background-color: chocolate;
+  border-radius: 40%;
+  width: 100px;
+  height: 60px;
+  margin-left: 30px;
+}
