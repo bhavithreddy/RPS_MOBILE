@@ -44,8 +44,6 @@ const checkGameOver = () => {
     msg.innerText = "FINAL SCORE - YOU LOSE!!";
     msgCont.style.backgroundColor = "red";
     resetGame();
-  } else {
-    msg.innerText = "PLAY AGAIN!!";
   }
 };
 
@@ -54,6 +52,9 @@ const resetGame = () => {
   CompScore = 0;
   userScoreBoard.innerText = userScore;
   pcScoreBoard.innerText = CompScore;
+  choices.forEach((choice) => {
+    choice.style.pointerEvents = "auto";
+  });
 };
 
 const playGame = (userChoice) => {
